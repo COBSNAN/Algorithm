@@ -15,6 +15,15 @@ import java.util.List;
  */
 public class KPM {
 
+    /**
+     *
+     * next[j]
+     * when j = 0 ,val = -1;
+     * when j > 0 and j < modeArr.lenght, val = max{k | 1<= k < j 且 modeArr[0] -- modeArr[k-1] = modeArr[j-k] -- modeArr[j-1] }
+     *
+     * @param mode
+     * @return
+     */
     int[] getNext(String mode){
         if (mode == null){
             return null;
